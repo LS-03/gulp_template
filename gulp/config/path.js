@@ -14,13 +14,13 @@ export const path = {
     src: {
         js: `${srcFolder}/js/app.js`,
         scss: `${srcFolder}/scss/style.scss`,
-        html: `${srcFolder}/*.html`,
+        html: `${srcFolder}/*.pug`,
         files: `${srcFolder}/files/**/*.*`,
     },
     watch: {
         js: `${srcFolder}/js/**/*.js`,
         scss: `${srcFolder}/scss/**/*.scss`,
-        html: `${srcFolder}/**/*.html`,
+        html: `${srcFolder}/**/*.pug`,
         files: `${srcFolder}/files/**/*.*`
     },
     clean: buildFolder,

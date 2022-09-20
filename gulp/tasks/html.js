@@ -8,12 +8,12 @@ export const html = () => {
                 message: "Error: <%= error.message %>"
             }))
         ) 
-        // .pipe(pug({
-        //     // Сжатие HTML файла
-        //     pretty: true,
-        //     // Отображение в терминале какой файл отработан
-        //     verbose: true
-        // }))
+        .pipe(pug({
+            // Сжатие HTML файла
+            pretty: true,
+            // Отображение в терминале какой файл отработан
+            verbose: true
+        }))
         .pipe(app.gulp.dest(app.path.build.html))
         .pipe(app.plugins.browsersync.stream());
 };
